@@ -28,13 +28,13 @@ After running AlphaBot2 in the arena, a map of the auro markers and the fruit ar
 <img src="pics/Capture1.PNG" width="300" height="400" >
 
 # Autonomous driving (Part 2)
-After the map of the auro markers and fruits are estimated. A __modified A* algorithm__ is used for **path planning** from the location of the AlphaBot2 to the fruits. It assigns 8 nodes around the AlphaBots and calculate the displacement of each nodes to the fruit. Node with the least displacement to the fruit and is not near the auro markers (obstacles) is selected. The steps repeats with the newly selected node until the selected node is locate near the fruit location. All the selected nodes are recorded and will be the path the AlphaBot2 needs to move.
+After the map of the auro markers and fruits are estimated. A __modified A* algorithm__ is used for **path planning** from the location of the AlphaBot2 to the fruits. It assigns 8 nodes around the AlphaBots and calculate the displacement of each nodes to the fruit. Node with the least displacement to the fruit and is not near the auro markers (obstacles) is selected. The steps repeats with the newly selected node until the selected node is locate near the fruit location. All the selected nodes are recorded and will be the path the AlphaBot2 needs to move. AlphaBot2 will move node by node to each each fruits.
 
 <img src="pics/InkedIllustration-of-A-algorithm-path-planning.jpg" width="800" height="400" >
 
-Kalmen filter will be used to adjust the AlphaBot2 location by viewing the auro markers from the camera and using the known location of the markers and the motor pwm pulses.
+**Kalmen filter** will be used to adjust the AlphaBot2 location by viewing the auro markers from the camera and using the known location of the markers and the motor pwm pulses.
 
 Sample of planned path:
-The colored plus signs are the fruits and the black boxs are the auro markers (obstacles). The dotted lines are the planned path by A* algorithm. AlphaBot2 will move to within 0.4m from the fruits in order to be considered as reached to fruits. it moved from red (red apple) to green (green apple) and lastly to orange (orange fruit).
+The colored plus signs are the fruits and the black boxs are the auro markers (obstacles). **The dotted lines are the planned path by A* algorithm**. AlphaBot2 will move to within 0.4m from the fruits in order to be considered as reached to fruits. It moved from red (red apple) to green (green apple) and lastly to orange (orange fruit).
 
 <img src="pics/Capture4.PNG" width="400" height="400" >
