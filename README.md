@@ -33,7 +33,7 @@ After the map of the auro markers and fruits are estimated. A __modified A* algo
 
 <img src="pics/InkedIllustration-of-A-algorithm-path-planning.jpg" width="800" height="400" >
 
-**Kalmen filter** will be used to adjust the AlphaBot2 location by viewing the auro markers from the camera and using the known location of the markers and the motor pwm pulses.
+**Kalmen filter** is used to adjust the AlphaBot2 location by viewing the auro markers from the camera and using the known location of the markers and the motor pwm pulses.
 
 <ins>__Sample of planned path:__</ins>
 
