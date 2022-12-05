@@ -13,7 +13,7 @@ The layout of the arena is shown in the image below where there are 4 fruits and
 
 <img src="pics/WhatsApp Image 2022-12-06 at 1.57.47 AM.jpeg" width="400" height="300" >
 
-Running the command below to start (replace the xxxxx with ip address of the raspberry pi)
+Running the command below to start part 1 (replace the xxxxx with ip address of the raspberry pi)
 ```
 python operate.py --ip xxxxx
 ```
@@ -38,3 +38,8 @@ Sample of planned path:
 The colored plus signs are the fruits and the black boxs are the auro markers (obstacles). __The dotted lines are the planned path by A* algorithm__. AlphaBot2 will move to within 0.4m from the fruits in order to be considered as reached to fruits. It moved from red (red apple) to green (green apple) and lastly to orange (orange fruit).
 
 <img src="pics/Capture4.PNG" width="400" height="400" >
+
+Running the command below to start part 2 (replace the xxxxx with ip address of the raspberry pi)
+```
+python operate_task2.py --ip xxxxx
+```
