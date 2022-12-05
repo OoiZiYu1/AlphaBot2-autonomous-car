@@ -1,7 +1,7 @@
 # AlphaBot2-autonomous-car
 This is project is to build and code a autonomous car using **AlphaBot2**. The raspberry pi in the AlphaBot2 is the server while the laptop is the client who control the server.
 
-<img src="pics/Capture3.PNG" width="300" height="350" >
+<img src="pics/Capture3.PNG" width="200" height="250" >
 
 __There are two parts in the project which is mapping and autonomous driving. Mapping is to map out the obstacles (auro markers) and goals (fruits) locations in the arena. Autonomous driving is to perform path planing to plan a path to reach a few goals (fruits) and move through the planned path autonomously.__
 
