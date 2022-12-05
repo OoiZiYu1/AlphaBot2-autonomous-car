@@ -3,8 +3,9 @@ This is project is to build and code a autonomous car using **AlphaBot2**. The r
 
 <img src="pics/Capture3.PNG" width="300" height="350" >
 
-There are two parts in the project which is mapping and autonomous driving.
-# Mapping (Part 1)
+__There are two parts in the project which is mapping and autonomous driving. Mapping is to map out the obstacles (auro markers) and goals (fruits) locations in the arena. Autonomous driving is to perform path planing to plan a path to reach a few goals (fruits) and move through the planned path autonomously.__
+
+## Mapping (Part 1)
 <img src="pics/1594819952234.jpg" width="400" height="200" >
 
 The locations of the auro markers and the fruits are needed to be mapped. Therefore, __this mapping part uses camera and AlphaBot2's location adjusted by Kalmen filter to estimate the auro markers and the fruits. A trained YOLO5 model is used to detect the fruit and OpenCV function is used to detect the auro markers from the images from the camera.__
@@ -27,7 +28,7 @@ After running AlphaBot2 in the arena, a map of the auro markers and the fruit ar
 - [lab_output/targets.txt](lab_output/targets.txt) (fruits estimated locations)
 <img src="pics/Capture1.PNG" width="300" height="400" >
 
-# Autonomous driving (Part 2)
+## Autonomous driving (Part 2)
 After the map of the auro markers and fruits are estimated. A __modified A* algorithm__ is used for **path planning** from the location of the AlphaBot2 to the fruits. It assigns 8 nodes around the AlphaBots and calculate the displacement of each nodes to the fruit. Node with the least displacement to the fruit and is not near the auro markers (obstacles) is selected. The steps repeats with the newly selected node until the selected node is locate near the fruit location. All the selected nodes are recorded and will be the path the AlphaBot2 needs to move. AlphaBot2 will move node by node to each each fruits.
 
 <img src="pics/InkedIllustration-of-A-algorithm-path-planning.jpg" width="800" height="400" >
