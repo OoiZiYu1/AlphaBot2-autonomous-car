@@ -37,7 +37,7 @@ After the map of the auro markers and fruits are estimated. A __modified A* algo
 
 <ins>__Sample of planned path:__</ins>
 
-The colored plus signs are the fruits and the black boxs are the auro markers (obstacles). __The dotted lines are the planned path by A* algorithm__. AlphaBot2 will move to within 0.4m from the fruits in order to be considered as reached to fruits. It moved from red (red apple) to green (green apple) and lastly to orange (orange fruit).
+The colored plus signs are the fruits and the black boxs are the auro markers (obstacles). __The dotted lines are the planned path by A* algorithm__. AlphaBot2 will move to within 0.4m from the fruits in order to be considered as reached to fruits. It moved from origin to red (red apple), green (green apple) and lastly to orange (orange fruit).
 
 <img src="pics/Capture4.PNG" width="400" height="400" >
 
